@@ -6,6 +6,8 @@ import DesafioNumeroAleatorio from './components/basicos/DesafioNumeroAleatorio'
 import Card from './components/layout/Card';
 import Famila from './components/basicos/Famila';
 import FamiliaMembro from './components/basicos/FamiliaMembro';
+import ListaAlunos from './components/repeticao/ListaAlunos';
+import ListaProdutos from './components/repeticao/ListaProdutos';
 import './App.css';
 
 
@@ -15,6 +17,14 @@ export default (props) => {
       <h1>Fundamentos React</h1>
 
       <div className="Cards">
+
+        <Card titulo="#6 - Repetição Desafio" color="#40E0D0">
+          <ListaProdutos> </ListaProdutos>
+        </Card>
+
+        <Card titulo="#5 - Repetição" color="#FF4C65">
+          <ListaAlunos> </ListaAlunos>
+        </Card>
 
         <Card titulo="#5 - Componentes com filhos" color="#00C8F8">
           <Famila sobrenome="Silva">
