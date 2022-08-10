@@ -8,6 +8,8 @@ import Famila from './components/basicos/Famila';
 import FamiliaMembro from './components/basicos/FamiliaMembro';
 import ListaAlunos from './components/repeticao/ListaAlunos';
 import ListaProdutos from './components/repeticao/ListaProdutos';
+import ParOuImpar from './components/condicional/ParOuImpar';
+import UsuarioInfo from './components/condicional/UsuarioInfo';
 import './App.css';
 
 
@@ -17,6 +19,12 @@ export default (props) => {
       <h1>Fundamentos React</h1>
 
       <div className="Cards">
+
+        <Card titulo="#7 - Rederização condicional" color="#982395">
+          <ParOuImpar numero={ 21 } />
+          <UsuarioInfo usuario={ { nome: 'Fernando' } } />
+          <UsuarioInfo usuario={ { email: 'fernando@gmail.com' } } />
+        </Card>
 
         <Card titulo="#6 - Repetição Desafio" color="#40E0D0">
           <ListaProdutos> </ListaProdutos>
