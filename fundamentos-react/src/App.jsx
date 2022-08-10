@@ -22,7 +22,7 @@ export default (props) => {
 
       <div className="Cards">
 
-        <Card titulo="#9 - Comunicação direta" color="#8BAD39">
+        <Card titulo="#10 - Comunicação direta" color="#8BAD39">
           <IndiretaPai />
         </Card>
 
