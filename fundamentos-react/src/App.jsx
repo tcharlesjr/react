@@ -10,6 +10,7 @@ import ListaAlunos from './components/repeticao/ListaAlunos';
 import ListaProdutos from './components/repeticao/ListaProdutos';
 import ParOuImpar from './components/condicional/ParOuImpar';
 import UsuarioInfo from './components/condicional/UsuarioInfo';
+import DiretaPai from './components/comunicacao/DiretaPai';
 import './App.css';
 
 
@@ -20,17 +21,21 @@ export default (props) => {
 
       <div className="Cards">
 
-        <Card titulo="#7 - Rederização condicional" color="#982395">
+        <Card titulo="#9 - Comunicação direta" color="#59323C">
+          <DiretaPai />
+        </Card>
+
+        <Card titulo="#8 - Rederização condicional" color="#982395">
           <ParOuImpar numero={ 21 } />
           <UsuarioInfo usuario={ { nome: 'Fernando' } } />
           <UsuarioInfo usuario={ { email: 'fernando@gmail.com' } } />
         </Card>
 
-        <Card titulo="#6 - Repetição Desafio" color="#40E0D0">
+        <Card titulo="#7 - Repetição Desafio" color="#40E0D0">
           <ListaProdutos> </ListaProdutos>
         </Card>
 
-        <Card titulo="#5 - Repetição" color="#FF4C65">
+        <Card titulo="#6 - Repetição" color="#FF4C65">
           <ListaAlunos> </ListaAlunos>
         </Card>
 
